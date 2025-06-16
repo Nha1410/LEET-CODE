@@ -2,7 +2,7 @@ package main
 
 // 8. String to Integer (atoi)
 
-func myAtoi(s string) int {
+func myAtoi1(s string) int {
 	const INT_MAX = 1<<31 - 1
 	const INT_MIN = -1 << 31
 
