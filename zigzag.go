@@ -1,5 +1,7 @@
 package main
 
+// ✅ Mô phỏng tuyến tính (Simulation / Simulation with Direction Control)
+// 6. Zigzag Conversion
 func convert(s string, numRows int) string {
 	if numRows == 1 || numRows >= len(s) {
 		return s
