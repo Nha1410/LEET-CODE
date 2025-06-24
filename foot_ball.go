@@ -14,8 +14,8 @@ var (
 	wg            sync.WaitGroup
 )
 
-func main() {
-	for i := 0; i < playerCount; i++ {
+func main1() {
+	for i := range playerCount {
 		wg.Add(1)
 		go player(i)
 	}

@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // 10. Regular Expression Matching
 func isMatch(s string, p string) bool {
 	memo := make(map[string]bool)
@@ -9,7 +11,7 @@ func isMatch(s string, p string) bool {
 		if j == len(p) {
 			return i == len(s)
 		}
-		key := string(i) + "," + string(j)
+		key := fmt.Sprint(i) + "," + fmt.Sprint(j)
 		if val, found := memo[key]; found {
 			return val
 		}

@@ -23,7 +23,7 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	copy(numsAll[nums1Len:], nums2)
 
 	// Sort the merged array numsAll
-	for i, _ := range numsAll {
+	for i := range numsAll {
 		for j := i + 1; j < len(numsAll); j++ {
 			if numsAll[i] > numsAll[j] {
 				numsAll[i], numsAll[j] = numsAll[j], numsAll[i]
