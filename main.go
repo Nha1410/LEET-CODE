@@ -14,12 +14,16 @@ func main() {
 
 	fmt.Println(convert("PAYPALISHIRING", 3))
 
-	fmt.Println(myAtoi("   -42"))                           // Should return -42
-	fmt.Println(myAtoi1("   -42"))                          // Should return -42
-	fmt.Println(lengthOfLongestSubstring("abcabcbb"))       // Should return 3
-	fmt.Println(longestPalindrome("babad"))                 // Should return "bab" or "aba"
-	fmt.Println(longestPalindromeExpandFromCenter("babad")) // Should return "bab" or "aba"
-	fmt.Println(reverse(123))                               // Should return 321
-	fmt.Println(reverse(-123))                              // Should return -321
-	fmt.Println(twoSum([]int{2, 7, 11, 15}, 9))             // Should return [0, 1]
+	fmt.Println(myAtoi("   -42"))                                          // Should return -42
+	fmt.Println(myAtoi1("   -42"))                                         // Should return -42
+	fmt.Println(lengthOfLongestSubstring("abcabcbb"))                      // Should return 3
+	fmt.Println(longestPalindrome("babad"))                                // Should return "bab" or "aba"
+	fmt.Println(longestPalindromeExpandFromCenter("babad"))                // Should return "bab" or "aba"
+	fmt.Println(reverse(123))                                              // Should return 321
+	fmt.Println(reverse(-123))                                             // Should return -321
+	fmt.Println(twoSum([]int{2, 7, 11, 15}, 9))                            // Should return [0, 1]
+	fmt.Println(intToRoman(1994))                                          // Should return "MCMXCIV"
+	fmt.Println(romanToInt("MCMXCIV"))                                     // Should return 1994
+	fmt.Println(longestCommonPrefix([]string{"flower", "flow", "flight"})) // Should return "fl"
+	fmt.Println(longestCommonPrefix([]string{"dog", "racecar", "car"}))    // Should return ""
 }
